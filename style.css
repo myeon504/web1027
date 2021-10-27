@@ -72,15 +72,15 @@ header{width: 100%;
 }
 .form-title{
     color: #272528;
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-family: ff-ernestine-pro, serif;
     font-weight: 600;
     font-style: normal;
 }
 .type-container{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .types{display: flex; width: 100%;}
