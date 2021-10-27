@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber Bakery</title>
+    <meta name="description" content="Demo for the tutorial on how to build a 3d model color customizer app with Three.js." />
+    <meta name="keywords" content="three.js, color customizer, app, tutorial, 3d model, blender, javascript" />
+    <meta name="author" content="Kyle Wetton for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/nwj1yzx.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="headerbox1">
+        <div class="title-container">
+        <img src="title.png">
+        </div>
+    </div>
+        <div class="headerbox2">
+            <div class="headerbox3"></div>
+            <div class="headerbox3"></div>
+        </div>
+        <div class="headerbox4">
+            <div class="headerbox5"></div>
+        </div>
+    </header>
+    <section>
+        <canvas id="c"></canvas>
+        <div class="half"></div>
+        <div class="half">
+        <div class="form-container">
+        <p class="form-title">Order Form</p>
+        <div class="type-container">
+            <p class="sub-title">Type</p>
+            <div class="types">
+            <p class="item"><input type="radio" name="type" value="solid" id="solid" checked><label for="solid"></label>Solid</p>
+            <p class="item"><input type="radio" name="type" value="palette" id="palette"><label for="palette"></label>Palette</p>
+            <p class="item"><input type="radio" name="type" value="garden" id="garden" ><label for="garden"></label>Garden</p>
+            <p class="item"><input type="radio" name="type" value="scenery" id="scenery" ><label for="scenery"></label>Scenery</p>
+            <p class="item"><input type="radio" name="type" value="painting" id="painting" ><label for="painting"></label>Painting</p>
+            </div>
+        </div>
+        <p class="sub-title">Color</p>
+        <div class="options">
+            <div class="option --is-active" data-option="base">
+                Base
+            </div>
+            <div class="option" data-option="cream_t">
+                Top
+            </div>
+            <div class="option" data-option="cream_s">
+                Side
+            </div>
+            <div class="option" data-option="cream_b">
+                Bottom
+            </div>
+        </div>
+        <div class="controls">
+            <div id="js-tray" class="tray">
+                <div id="js-tray-slide" class="tray__slide"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <script src='https://unpkg.com/three@0.127.0/build/three.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+    <script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
